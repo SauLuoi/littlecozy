@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: $text-primary;
+  font-family: $tillana;
+  line-height: 2.7rem;
+
+  @media screen and (max-width: 575px) {
+    font-size: 10px;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+  }
+
+  .container {
+    @media (min-width: 1400px) {
+      max-width: 1200px;
+    }
+  }
+
+  .l-body {
+    margin-top: 100px;
+  }
+
+  .bg-second {
+    background-color: $bg-second;
+  }
+
+  .bg-third {
+    background-color: $bg-third;
+  }
+
+  .heading-sacramento {
+    font-family: $sacramento;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+  }
+
+  .heading-arvo {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    font-family: $arvo;
+    font-weight: bold;
+    letter-spacing: .2px;
+  }
+
+  .btn-primary {
+    background-color: $bg-primary;
+    color: rgba(0, 0, 0, 0.85);
+    border: solid 1px $bg-primary;
+    border-radius: 15px;
+    font-size: 32px;
+    font-family: $arvo;
+    max-width: 257px;
+    margin: 0 auto;
+    display: block;
+
+    &:hover, &:focus, &:active, &:focus-visible {
+      background-color: $white !important;
+      color: rgba(0, 0, 0, 0.85) !important;
+      border: solid 1px $bg-primary !important;
+      box-shadow: 0 0 0 0.2rem $bg-primary;
+    }
+  }
+
+  .border-left {
+    border-left: solid 2px #000000 !important;
+  }
+
+  .border-bottom {
+    border-bottom: solid 2px #000000 !important;
+  }
+
+  .py-6 {
+    padding-top: 5rem !important;
+    padding-bottm: 5rem !important;
+  }
+
+}

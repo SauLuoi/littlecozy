@@ -1,0 +1,68 @@
+.l-header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  .h-logo {
+    a {
+      text-decoration: none;
+      color: $black;
+      font-size: 2rem;
+      font-family: $inika;
+      font-weight: bold;
+    }
+  }
+
+  .h-menu {
+    ul {
+      li {
+        float: left;
+        margin-left: 40px;
+        list-style: none;
+        position: relative;
+        padding: 5px 0;
+        transition: linear .3s;
+
+        &::before {
+          content: "";
+          width: 100%;
+          height: 2px;
+          background: $active;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: linear .3s;
+          transform: scaleX(0);
+        }
+
+        &:hover {
+          &::before {
+            transform: scaleX(1);
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: $text-primary;
+          font-family: $tillana;
+        }
+      }
+
+      .active {
+        &::before {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}
+
+.l-header-scroll {
+  background: #0000005c;
+}
