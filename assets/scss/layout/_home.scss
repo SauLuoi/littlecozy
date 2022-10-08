@@ -1,0 +1,141 @@
+.home {
+  margin-top: -100px;
+
+  &-banner {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background: url("../images/little-cozy.png") no-repeat center right;
+    background-size: auto;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      max-height: 595px;
+      background: url("../images/home-banner.png") no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-size: cover;
+    }
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      max-height: 495px;
+      background-color: $bg-primary;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .preview-image {
+      width: 100%;
+      max-width: 583px;
+      margin: 0 auto;
+    }
+
+    &_text {
+
+    }
+  }
+
+  .bg-second {
+
+    &-right {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: $bg-second;
+        z-index: -1;
+      }
+    }
+
+    &-left {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-color: $bg-second;
+        z-index: -1;
+      }
+    }
+  }
+
+  &-only-title {
+    .heading-sacramento {
+      max-width: 600px;
+    }
+  }
+
+  &-overview {
+    position: relative;
+    padding: 100px 0;
+
+    &_galley {
+
+      .slick-dots {
+        justify-content: center;
+      }
+
+      .title {
+        color: $text-title-primary;
+        font-size: 2.5rem;
+        font-weight: bold;
+        font-family: $arvo;
+      }
+
+      .time {
+        font-size: 22px;
+        font-family: $arvo;
+        font-weight: 400;
+        color: $text-third;
+        padding: 1rem 0 1.8rem 0;
+      }
+
+      .galley {
+        figure {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+  }
+
+  &-area {
+    padding: 100px 0;
+
+    &_content {
+      max-width: 645px;
+      margin: 0 auto;
+    }
+  }
+
+  &-slide {
+    padding: 100px 0;
+    .slick-dots {
+      justify-content: center;
+      margin-top: 35px;
+    }
+
+    &_list {
+      .item {
+        img {
+        }
+      }
+    }
+  }
+}

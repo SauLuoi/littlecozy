@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: $text-primary;
+  font-family: $tillana;
+
+  p, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+  }
+
+  .container {
+    @media (min-width: 1400px) {
+      max-width: 1200px;
+    }
+  }
+
+  .l-body {
+    margin-top: 100px;
+  }
+
+  .bg-second {
+    background-color: $bg-second;
+  }
+
+  .bg-third {
+    background-color: $bg-third;
+  }
+
+  .heading-sacramento {
+    font-family: $sacramento;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+  }
+
+  .btn-primary {
+    background-color: $bg-primary;
+    color: $white;
+    border: solid 1px $bg-primary;
+    border-radius: 15px;
+    font-size: 32px;
+    font-family: $arvo;
+    max-width: 257px;
+    margin: 0 auto;
+    display: block;
+
+    &:hover {
+      background-color: $white;
+      color: $text-title-primary;
+      border: solid 1px $bg-primary;
+    }
+  }
+
+}

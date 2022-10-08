@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Inika:wght@400;700&family=Sacramento&family=Tillana:wght@400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #000;
+  font-family: "Tillana", cursive; }
+  * p, * h1, * h2, * h3, * h4, * h5, * h6 {
+    margin-bottom: 0; }
+  @media (min-width: 1400px) {
+    * .container {
+      max-width: 1200px; } }
+  * .l-body {
+    margin-top: 100px; }
+  * .bg-second {
+    background-color: #F9F7F3; }
+  * .bg-third {
+    background-color: #F5F5F5; }
+  * .heading-sacramento {
+    font-family: "Sacramento", cursive;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: 2px; }
+  * .btn-primary {
+    background-color: #F0E9DC;
+    color: #fff;
+    border: solid 1px #F0E9DC;
+    border-radius: 15px;
+    font-size: 32px;
+    font-family: "Arvo", serif;
+    max-width: 257px;
+    margin: 0 auto;
+    display: block; }
+    * .btn-primary:hover {
+      background-color: #fff;
+      color: #E8D7B5;
+      border: solid 1px #F0E9DC; }
+
+.l-header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+  .l-header .h-logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    font-family: "Inika", serif;
+    font-weight: bold; }
+  .l-header .h-menu ul li {
+    float: left;
+    margin-left: 40px;
+    list-style: none;
+    position: relative;
+    padding: 5px 0;
+    transition: linear .3s; }
+    .l-header .h-menu ul li::before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: #E8D7B5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: linear .3s;
+      transform: scaleX(0); }
+    .l-header .h-menu ul li:hover::before {
+      transform: scaleX(1); }
+    .l-header .h-menu ul li a {
+      text-decoration: none;
+      color: #000;
+      font-family: "Tillana", cursive; }
+  .l-header .h-menu ul .active::before {
+    transform: scaleX(1); }
+
+.l-header-scroll {
+  background: #0000005c; }
+
+.home {
+  margin-top: -100px; }
+  .home-banner {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background: url("../images/little-cozy.png") no-repeat center right;
+    background-size: auto; }
+    .home-banner::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      max-height: 595px;
+      background: url("../images/home-banner.png") no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-size: cover; }
+    .home-banner::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      max-height: 495px;
+      background-color: #F0E9DC;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1; }
+    .home-banner .preview-image {
+      width: 100%;
+      max-width: 583px;
+      margin: 0 auto; }
+  .home .bg-second-right::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #F9F7F3;
+    z-index: -1; }
+  .home .bg-second-left::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #F9F7F3;
+    z-index: -1; }
+  .home-only-title .heading-sacramento {
+    max-width: 600px; }
+  .home-overview {
+    position: relative;
+    padding: 100px 0; }
+    .home-overview_galley .slick-dots {
+      justify-content: center; }
+    .home-overview_galley .title {
+      color: #E8D7B5;
+      font-size: 2.5rem;
+      font-weight: bold;
+      font-family: "Arvo", serif; }
+    .home-overview_galley .time {
+      font-size: 22px;
+      font-family: "Arvo", serif;
+      font-weight: 400;
+      color: #D9D9D9;
+      padding: 1rem 0 1.8rem 0; }
+    .home-overview_galley .galley figure img {
+      width: 100%; }
+  .home-area {
+    padding: 100px 0; }
+    .home-area_content {
+      max-width: 645px;
+      margin: 0 auto; }
+  .home-slide {
+    padding: 100px 0; }
+    .home-slide .slick-dots {
+      justify-content: center;
+      margin-top: 35px; }
+
+/*# sourceMappingURL=index.css.map */
