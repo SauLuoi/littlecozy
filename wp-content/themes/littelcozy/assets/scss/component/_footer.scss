@@ -1,0 +1,99 @@
+.l-footer {
+  background-color: $bg-second;
+  padding: 60px 0;
+
+  .line-container {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: #000;
+      position: absolute;
+      right: 100%;
+      bottom: 100%;
+    }
+  }
+
+  .f-logo {
+    a {
+      text-decoration: none;
+      color: #000;
+      font-size: 2rem;
+      font-family: $arvo;
+      font-weight: bold;
+    }
+  }
+
+  .f-form {
+    margin-top: 21px;
+
+    form {
+      width: 100%;
+      position: relative;
+      max-width: 510px;
+      height: 50px;
+
+      input[type="email"] {
+        width: 100%;
+        border-radius: 15px;
+        border: solid 1px #E8D7B5;
+        padding: 0 15px;
+        height: 100%;
+
+        &:focus-visible {
+          border: solid 1px #E8D7B5;
+        }
+
+        &::placeholder {
+          font-size: 20px;
+          font-family: $tillana;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      .btn-send {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 140px;
+        height: 100%;
+        border-radius: 0 15px 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .f-contact {
+    text-align: right;
+
+    p {
+      font-family: $arvo;
+      font-size: 20px;
+    }
+  }
+
+  .f-text {
+    text-transform: lowercase;
+
+    .heading-arvo {
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+.copyright {
+  height: 100px;
+  text-align: center;
+  background: $bg-nth-4;
+  color: $white;
+  font-size: 1.8rem;
+  letter-spacing: 1rem;
+  font-family: $unna;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
